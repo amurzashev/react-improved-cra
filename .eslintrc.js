@@ -25,6 +25,7 @@ module.exports = {
     "react/jsx-filename-extension": "off",
     "arrow-parens": "off",
     "react/jsx-props-no-spreading": "off",
+    "no-confusing-arrow": "off"
   },
   settings: {
     "import/resolver": {
