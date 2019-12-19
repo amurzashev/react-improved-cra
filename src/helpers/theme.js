@@ -1,6 +1,6 @@
 export default {
   colors: {
-    primary: 'peach',
+    primary: 'salmon',
     secondary: 'lightblue',
   },
   breakpoints: {
