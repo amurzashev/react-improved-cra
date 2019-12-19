@@ -1,12 +1,19 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { ThemeProvider } from 'emotion-theming';
+import { Provider } from 'react-redux';
+import routes from './components/pages';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>hello world</h1>
-    </div>
-  );
-}
+const App = () => (
+  <Provider store={null}>
+    <ThemeProvider theme={null}>
+      <BrowserRouter>
+        <Switch>
+          {routes.map(route => <Route {...route} />)}
+        </Switch>
+      </BrowserRouter>
+    </ThemeProvider>
+  </Provider>
+);
 
 export default App;
